@@ -1,4 +1,4 @@
-##Aplicando conceitos modelando dominios ricos
+## Aplicando conceitos modelando dominios ricos em C#
  
  - Linguagem Ubíqua
  - Domínios Ricos vs Domínios Anêmicos
