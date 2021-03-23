@@ -36,14 +36,14 @@ namespace PaymentContext.Tests.Entities
             _student.AddSubscription(_subscription);
             _student.AddSubscription(_subscription);
 
-            Assert.IsFalse(_student.IsValid);
+            Assert.IsTrue(_student.Invalid);
         }
 
         [TestMethod]
         public void ShouldReturnErrorWhenSubscriptionHasNoPayment()
         {
             _student.AddSubscription(_subscription);
-            Assert.IsTrue(_student.IsValid);
+            Assert.IsTrue(_student.Valid);
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace PaymentContext.Tests.Entities
             _subscription.AddPayment(payment);
             _student.AddSubscription(_subscription);
 
-            Assert.IsFalse(_student.IsValid);
+            Assert.IsTrue(_student.Invalid);
         }
     }
 }

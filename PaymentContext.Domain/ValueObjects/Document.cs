@@ -11,7 +11,7 @@ namespace PaymentContext.Domain.ValueObjects
             Number = number;
             Type = type;
 
-            AddNotifications(new Contract<Document>()
+            AddNotifications(new Contract()
                 .Requires()
                 .IsTrue(Validate(), "Document.Number", "Documento inválido")
             );
